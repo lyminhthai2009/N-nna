@@ -1,0 +1,1223 @@
+[07:59:02] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.4+7-LTS; Eclipse Adoptium Temurin-21.0.4+7) on Linux 5.14.0-503.33.1.el9_5.x86_64 (amd64)
+[07:59:02] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21-130-master@b1b5d4c (2024-08-10T10:02:42Z) for Minecraft 1.21
+[07:59:02] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[07:59:04] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Remapping plugin 'plugins/MMOItems-6.10.1-157-7 (1).jar'...
+[07:59:05] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Done remapping plugin 'plugins/MMOItems-6.10.1-157-7 (1).jar' in 1057ms.
+[07:59:06] [ServerMain/INFO]: [PluginInitializerManager] Initialized 40 plugins
+[07:59:06] [ServerMain/INFO]: [PluginInitializerManager] Paper plugins (2):
+ - EconomyShopGUI (6.12.1), FancyHolograms (2.3.3)
+[07:59:06] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (38):
+ - AdvancedBan (2.3.0), AdvancedSeasons (1.7.15), AuraSkills (2.2.8), AuthMe (5.6.0-bCUSTOM), AuthMePE (1.1.3), BetterRTP (3.6.13), BetterTeams (4.12.0), BreweryX (3.4.10;HEAD), DecentHolograms (2.8.16), Essentials (2.21.1-dev+13-be3e641), EssentialsChat (2.21.1-dev+13-be3e641), FastAsyncWorldEdit (2.12.3-SNAPSHOT-986;a2a5545), GSit (2.3.2), Geyser-Spigot (2.7.1-SNAPSHOT), InteractiveChat (4.2.16.0), LPC (3.6.0), LuckPerms (5.4.158), MMOCore (1.12.1-SNAPSHOT), MMOItems (6.10.1-SNAPSHOT), MOTD (2.3.11), MiniMOTD (2.1.3), Multiverse-Core (4.3.1-b861), MythicLib (1.7.1-SNAPSHOT), MythicMobs (5.8.2-SNAPSHOT-5b666f3a), PlaceholderAPI (2.11.6), ProtocolLib (5.3.0), Skript (2.11.0), TAB (5.2.0), Vault (1.7.3-b131), ViaBackwards (5.3.2), ViaVersion (5.3.2), VoidGen (2.2.1), Vulcan (2.9.5), WorldEdit (7.3.9+6959-7adf70b), WorldGuard (7.0.11+068ad68), ZelBounty (2.0.2), ajLeaderboards (2.9.0), floodgate (2.2.4-SNAPSHOT (b116-0e3163c))
+[07:59:12] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[07:59:14] [ServerMain/INFO]: Loaded 1290 recipes
+[07:59:14] [ServerMain/INFO]: Loaded 1399 advancements
+[07:59:14] [Server thread/INFO]: Starting minecraft server version 1.21
+[07:59:14] [Server thread/INFO]: Loading properties
+[07:59:14] [Server thread/INFO]: This server is running Paper version 1.21-130-master@b1b5d4c (2024-08-10T10:02:42Z) (Implementing API version 1.21-R0.1-SNAPSHOT)
+[07:59:15] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[07:59:15] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[07:59:15] [Server thread/INFO]: Using 4 threads for Netty based IO
+[07:59:15] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and population gen parallelism of 1 threads
+[07:59:16] [Server thread/ERROR]: [MapSerializer] Could not deserialize key grass into class net.minecraft.world.item.Item at [entities, spawning, alt-item-despawn-rate, items]
+[07:59:16] [Server thread/INFO]: Default game type: SURVIVAL
+[07:59:16] [Server thread/INFO]: Generating keypair
+[07:59:16] [Server thread/INFO]: Starting Minecraft server on 0.0.0.0:27027
+[07:59:16] [Server thread/INFO]: Using epoll channel type
+[07:59:16] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[07:59:16] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
+[07:59:16] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Ambiguous plugin name 'WorldEdit' for files 'plugins/.paper-remapped/worldedit-bukkit-7.3.9.jar' and 'plugins/.paper-remapped/FastAsyncWorldEdit-Bukkit-2.12.3-SNAPSHOT-986.jar' in 'plugins/.paper-remapped'
+[07:59:16] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load 'plugins/.paper-remapped/Vulcan-2.9.5.jar' in 'plugins/.paper-remapped'
+org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [packetevents]. Please download and install these plugins to run 'Vulcan'.
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:82) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:40) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:546) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:292) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1215) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[07:59:18] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'worldedit-bukkit-7.3.9.jar' in folder 'plugins/.paper-remapped'
+java.lang.IllegalStateException: Provider SpigotPluginProvider{path=plugins/.paper-remapped/worldedit-bukkit-7.3.9.jar, description=org.bukkit.plugin.PluginDescriptionFile@651c6cb0, jarFile=java.util.jar.JarFile@58af1a1c, status=null, dependencyContext=null} attempted to add duplicate plugin identifier FastAsyncWorldEdit v2.12.3-SNAPSHOT-986;a2a5545 THIS WILL CREATE BUGS!!!
+	at io.papermc.paper.plugin.storage.ServerPluginProviderStorage$1.applyContext(ServerPluginProviderStorage.java:28) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:113) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:40) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:546) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:292) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1215) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[07:59:18] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loading 4 libraries... please wait
+[07:59:18] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /home/container/libraries/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
+[07:59:18] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /home/container/libraries/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
+[07:59:18] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /home/container/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[07:59:18] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /home/container/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[07:59:18] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /home/container/libraries/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[07:59:18] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /home/container/libraries/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
+[07:59:18] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /home/container/libraries/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
+[07:59:18] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /home/container/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
+[07:59:18] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /home/container/libraries/net/kyori/adventure-text-serializer-legacy/4.13.1/adventure-text-serializer-legacy-4.13.1.jar
+[07:59:18] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /home/container/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[07:59:18] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /home/container/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[07:59:18] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /home/container/libraries/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
+[07:59:18] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /home/container/libraries/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
+[07:59:18] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /home/container/libraries/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
+[07:59:18] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /home/container/libraries/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
+[07:59:18] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /home/container/libraries/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
+[07:59:18] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /home/container/libraries/net/kyori/option/1.0.0/option-1.0.0.jar
+[07:59:18] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /home/container/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[07:59:21] [Server thread/INFO]: [SpigotLibraryLoader] [BreweryX] Loading 1 libraries... please wait
+[07:59:21] [Server thread/INFO]: [SpigotLibraryLoader] [BreweryX] Loaded library /home/container/libraries/org/jetbrains/kotlin/kotlin-stdlib/2.0.21/kotlin-stdlib-2.0.21.jar
+[07:59:21] [Server thread/INFO]: [SpigotLibraryLoader] [BreweryX] Loaded library /home/container/libraries/org/jetbrains/annotations/13.0/annotations-13.0.jar
+[07:59:21] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loading 1 libraries... please wait
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-all/4.1.82.Final/netty-all-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-buffer/4.1.82.Final/netty-buffer-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-codec/4.1.82.Final/netty-codec-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-codec-dns/4.1.82.Final/netty-codec-dns-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-codec-haproxy/4.1.82.Final/netty-codec-haproxy-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-codec-http/4.1.82.Final/netty-codec-http-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-codec-http2/4.1.82.Final/netty-codec-http2-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-codec-memcache/4.1.82.Final/netty-codec-memcache-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-codec-mqtt/4.1.82.Final/netty-codec-mqtt-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-codec-redis/4.1.82.Final/netty-codec-redis-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-codec-smtp/4.1.82.Final/netty-codec-smtp-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-codec-socks/4.1.82.Final/netty-codec-socks-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-codec-stomp/4.1.82.Final/netty-codec-stomp-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-codec-xml/4.1.82.Final/netty-codec-xml-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-common/4.1.82.Final/netty-common-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-handler/4.1.82.Final/netty-handler-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-transport-native-unix-common/4.1.82.Final/netty-transport-native-unix-common-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-handler-proxy/4.1.82.Final/netty-handler-proxy-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-resolver/4.1.82.Final/netty-resolver-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-resolver-dns/4.1.82.Final/netty-resolver-dns-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-transport/4.1.82.Final/netty-transport-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-transport-rxtx/4.1.82.Final/netty-transport-rxtx-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-transport-sctp/4.1.82.Final/netty-transport-sctp-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-transport-udt/4.1.82.Final/netty-transport-udt-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-transport-classes-epoll/4.1.82.Final/netty-transport-classes-epoll-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-transport-classes-kqueue/4.1.82.Final/netty-transport-classes-kqueue-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-resolver-dns-classes-macos/4.1.82.Final/netty-resolver-dns-classes-macos-4.1.82.Final.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-transport-native-epoll/4.1.82.Final/netty-transport-native-epoll-4.1.82.Final-linux-x86_64.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-transport-native-epoll/4.1.82.Final/netty-transport-native-epoll-4.1.82.Final-linux-aarch_64.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-transport-native-kqueue/4.1.82.Final/netty-transport-native-kqueue-4.1.82.Final-osx-x86_64.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-transport-native-kqueue/4.1.82.Final/netty-transport-native-kqueue-4.1.82.Final-osx-aarch_64.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-resolver-dns-native-macos/4.1.82.Final/netty-resolver-dns-native-macos-4.1.82.Final-osx-x86_64.jar
+[07:59:22] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedSeasons] Loaded library /home/container/libraries/io/netty/netty-resolver-dns-native-macos/4.1.82.Final/netty-resolver-dns-native-macos-4.1.82.Final-osx-aarch_64.jar
+[07:59:22] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.3.2
+[07:59:22] [Server thread/INFO]: [ViaVersion] ViaVersion 5.3.2 is now loaded. Registering protocol transformers and injecting...
+[07:59:23] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[07:59:24] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[07:59:26] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[07:59:26] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[07:59:28] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.158
+[07:59:28] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[07:59:28] [Server thread/INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.12.3-SNAPSHOT-986;a2a5545
+[07:59:28] [Server thread/WARN]: 
+**********************************************
+** You are using the Spigot-mapped FAWE jar on a modern Paper version.
+** This will result in slower first-run times and wasted disk space from plugin remapping.
+** Download the Paper FAWE jar from Modrinth to avoid this: https://modrinth.com/plugin/fastasyncworldedit/
+**********************************************
+[07:59:33] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@390444f3]
+[07:59:33] [Server thread/INFO]: [VoidGen] Loading server plugin VoidGen v2.2.1
+[07:59:33] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.11+068ad68
+[07:59:33] [Server thread/INFO]: [Multiverse-Core] Loading server plugin Multiverse-Core v4.3.1-b861
+[07:59:33] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.6
+[07:59:33] [Server thread/INFO]: [MythicMobs] Loading server plugin MythicMobs v5.8.2-SNAPSHOT-5b666f3a
+[07:59:33] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
+[07:59:33] [Server thread/INFO]: [MythicMobs] §x§f§f§0§0§0§0M§x§f§f§6§6§0§0y§x§f§f§c§c§0§0t§x§c§b§f§f§0§0h§x§6§5§f§f§0§0i§x§0§0§f§f§0§0c§x§0§0§f§f§6§6 §x§0§0§f§f§c§bE§x§0§0§c§b§f§fn§x§0§0§6§5§f§fa§x§0§0§0§0§f§fb§x§6§6§0§0§f§fl§x§c§c§0§0§f§fe§x§f§f§0§0§c§cd§x§f§f§0§0§6§6!
+[07:59:33] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.3.0
+[07:59:33] [Server thread/INFO]: [DecentHolograms] Loading server plugin DecentHolograms v2.8.16
+[07:59:33] [Server thread/INFO]: [MythicLib] Loading server plugin MythicLib v1.7.1-SNAPSHOT
+[07:59:33] [Server thread/INFO]: [MythicLib] Plugin file is called 'MythicLib-1.7.1-188.jar'
+[07:59:34] [Server thread/INFO]: [MythicLib] Detected Bukkit Version: v1_21_R1
+[07:59:34] [Server thread/INFO]: [MythicLib] Hooked onto WorldGuard
+[07:59:34] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.1-dev+13-be3e641
+[07:59:34] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.4-SNAPSHOT (b116-0e3163c)
+[07:59:36] [Server thread/INFO]: [floodgate] Took 2,481ms to boot Floodgate
+[07:59:36] [Server thread/INFO]: [AuraSkills] Loading server plugin AuraSkills v2.2.8
+[07:59:36] [Server thread/INFO]: [MMOCore] Loading server plugin MMOCore v1.12.1-SNAPSHOT
+[07:59:36] [Server thread/INFO]: [MMOCore] Plugin file is called 'MMOCore-1.12.1-SNAPSHOT.jar'
+[07:59:36] [Server thread/ERROR]: [MMOCore] Error initializing plugin 'MMOCore-1.12.1-SNAPSHOT.jar' in folder 'plugins/.paper-remapped' (Is it up to date?)
+java.lang.NoSuchMethodError: 'io.lumine.mythic.lib.manager.ModifierManager io.lumine.mythic.lib.MythicLib.getModifiers()'
+	at MMOCore-1.12.1-SNAPSHOT.jar/net.Indyuce.mmocore.MMOCore.onLoad(MMOCore.java:119) ~[MMOCore-1.12.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.storage.ServerPluginProviderStorage.processProvided(ServerPluginProviderStorage.java:59) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at io.papermc.paper.plugin.storage.ServerPluginProviderStorage.processProvided(ServerPluginProviderStorage.java:18) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:40) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:546) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:292) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1215) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[07:59:36] [Server thread/INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.21.1-dev+13-be3e641
+[07:59:36] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.7.1-SNAPSHOT
+[07:59:40] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[07:59:40] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[07:59:40] [Server thread/INFO]: [AuthMe] Loading server plugin AuthMe v5.6.0-bCUSTOM
+[07:59:40] [Server thread/INFO]: [MMOItems] Loading server plugin MMOItems v6.10.1-SNAPSHOT
+[07:59:40] [Server thread/INFO]: [MMOItems] Plugin file is called 'MMOItems-6.10.1-157-7 (1).jar'
+[07:59:40] [Server thread/INFO]: [MMOItems] Hooked onto WorldEdit
+[07:59:41] [Server thread/INFO]: [MMOItems Template Modifiers] Preloading template modifiers, please wait..
+[07:59:41] [Server thread/INFO]: [MMOItems Item Templates] Preloading item templates, please wait..
+[07:59:41] [Server thread/INFO]: [MiniMOTD] Loading server plugin MiniMOTD v2.1.3
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Loading server plugin ajLeaderboards v2.9.0
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Verifying checksum for gson
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Checksum matched for gson
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Verifying checksum for jar-relocator
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Checksum matched for jar-relocator
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Verifying checksum for asm
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Checksum matched for asm
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Verifying checksum for asm-commons
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Checksum matched for asm-commons
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Verifying checksum for gson
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Checksum matched for gson
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Verifying checksum for HikariCP
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Checksum matched for HikariCP
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Verifying checksum for slf4j-api
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Checksum matched for slf4j-api
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Verifying checksum for h2
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Checksum matched for h2
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Verifying checksum for okhttp
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Checksum matched for okhttp
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Verifying checksum for okio
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Checksum matched for okio
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Verifying checksum for okio-jvm
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Checksum matched for okio-jvm
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Verifying checksum for kotlin-stdlib-jdk8
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Checksum matched for kotlin-stdlib-jdk8
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Verifying checksum for kotlin-stdlib
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Checksum matched for kotlin-stdlib
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Verifying checksum for kotlin-stdlib-common
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Checksum matched for kotlin-stdlib-common
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Verifying checksum for annotations
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Checksum matched for annotations
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Verifying checksum for kotlin-stdlib-jdk7
+[07:59:41] [Server thread/INFO]: [ajLeaderboards] Checksum matched for kotlin-stdlib-jdk7
+[07:59:41] [Server thread/INFO]: [ZelBounty] Loading server plugin ZelBounty v2.0.2
+[07:59:41] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.3.2
+[07:59:41] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.2.0
+[07:59:41] [Server thread/INFO]: [Skript] Loading server plugin Skript v2.11.0
+[07:59:41] [Server thread/INFO]: [MOTD] Loading server plugin MOTD v2.3.11
+[07:59:41] [Server thread/INFO]: [LPC] Loading server plugin LPC v3.6.0
+[07:59:41] [Server thread/INFO]: [InteractiveChat] Loading server plugin InteractiveChat v4.2.16.0
+[07:59:41] [Server thread/INFO]: [GSit] Loading server plugin GSit v2.3.2
+[07:59:41] [Server thread/INFO]: [FancyHolograms] Loading server plugin FancyHolograms v2.3.3
+[07:59:41] [Server thread/INFO]: [EconomyShopGUI] Loading server plugin EconomyShopGUI v6.12.1
+[07:59:41] [Server thread/INFO]: [BreweryX] Loading server plugin BreweryX v3.4.10;HEAD
+[07:59:42] [Server thread/INFO]: [BetterTeams] Loading server plugin BetterTeams v4.12.0
+[07:59:42] [Server thread/INFO]: [BetterTeams] [BetterTeams] Checking if the file config.yml is up to date
+[07:59:42] [Server thread/INFO]: [BetterTeams] [BetterTeams] File is up to date
+[07:59:42] [Server thread/INFO]: [BetterRTP] Loading server plugin BetterRTP v3.6.13
+[07:59:42] [Server thread/INFO]: [AuthMePE] Loading server plugin AuthMePE v1.1.3
+[07:59:42] [Server thread/INFO]: [AdvancedSeasons] Loading server plugin AdvancedSeasons v1.7.15
+[07:59:42] [Server thread/INFO]: [AdvancedBan] Loading server plugin AdvancedBan v2.3.0
+[07:59:42] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[07:59:42] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.158
+[07:59:43] [Server thread/INFO]:         __    
+[07:59:43] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.158
+[07:59:43] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[07:59:43] [Server thread/INFO]: 
+[07:59:43] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[07:59:44] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[07:59:45] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[07:59:45] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[07:59:46] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 4039ms)
+[07:59:46] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[07:59:46] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[07:59:46] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[07:59:46] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[07:59:46] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[07:59:46] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.12.3-SNAPSHOT-986;a2a5545
+[07:59:47] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
+[07:59:47] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
+[07:59:47] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[07:59:47] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[07:59:47] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_21_R1.PaperweightFaweAdapter as the Bukkit adapter
+[07:59:49] [Server thread/INFO]: [VoidGen] Enabling VoidGen v2.2.1
+[07:59:49] [Server thread/INFO]: [VoidGen] Using VoidChunkGen: VERSION_UNKNOWN
+[07:59:49] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.3.0
+[07:59:49] [Server thread/INFO]: [MOTD] Enabling MOTD v2.3.11
+[07:59:49] [Server thread/INFO]: [MOTD] [Placeholder] PlaceholderAPI hooked.
+[07:59:49] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[07:59:49] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[07:59:49] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[07:59:49] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[07:59:49] [Server thread/INFO]: Preparing level "spawn"
+[07:59:49] [Server thread/ERROR]: [MapSerializer] Could not deserialize key grass into class net.minecraft.world.item.Item at [entities, spawning, alt-item-despawn-rate, items]
+[07:59:50] [Server thread/ERROR]: [MapSerializer] Could not deserialize key grass into class net.minecraft.world.item.Item at [entities, spawning, alt-item-despawn-rate, items]
+[07:59:50] [Server thread/ERROR]: [MapSerializer] Could not deserialize key grass into class net.minecraft.world.item.Item at [entities, spawning, alt-item-despawn-rate, items]
+[07:59:50] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[07:59:50] [ForkJoinPool.commonPool-worker-1/WARN]: [com.fastasyncworldedit.core.util.UpdateNotification] An update for FastAsyncWorldEdit is available. You are 117 build(s) out of date.
+You are running build 986, the latest version is build 1103.
+Update at https://www.spigotmc.org/resources/13932/
+[07:59:51] [Server thread/INFO]: Time elapsed: 1471 ms
+[07:59:51] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[07:59:51] [Server thread/INFO]: Time elapsed: 269 ms
+[07:59:51] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[07:59:52] [Server thread/INFO]: Time elapsed: 134 ms
+[07:59:52] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.3.2
+[07:59:52] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.21-1.21.1 (767)
+[07:59:52] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.11+068ad68
+[07:59:52] [Server thread/INFO]: [WorldGuard] (spawn) TNT ignition is PERMITTED.
+[07:59:52] [Server thread/INFO]: [WorldGuard] (spawn) Lighters are PERMITTED.
+[07:59:52] [Server thread/INFO]: [WorldGuard] (spawn) Lava fire is PERMITTED.
+[07:59:52] [Server thread/INFO]: [WorldGuard] (spawn) Fire spread is UNRESTRICTED.
+[07:59:52] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'spawn'
+[07:59:52] [Server thread/INFO]: [WorldGuard] (spawn_nether) TNT ignition is PERMITTED.
+[07:59:52] [Server thread/INFO]: [WorldGuard] (spawn_nether) Lighters are PERMITTED.
+[07:59:52] [Server thread/INFO]: [WorldGuard] (spawn_nether) Lava fire is PERMITTED.
+[07:59:52] [Server thread/INFO]: [WorldGuard] (spawn_nether) Fire spread is UNRESTRICTED.
+[07:59:52] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'spawn_nether'
+[07:59:52] [Server thread/INFO]: [WorldGuard] (spawn_the_end) TNT ignition is PERMITTED.
+[07:59:52] [Server thread/INFO]: [WorldGuard] (spawn_the_end) Lighters are PERMITTED.
+[07:59:52] [Server thread/INFO]: [WorldGuard] (spawn_the_end) Lava fire is PERMITTED.
+[07:59:52] [Server thread/INFO]: [WorldGuard] (spawn_the_end) Fire spread is UNRESTRICTED.
+[07:59:52] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'spawn_the_end'
+[07:59:52] [Server thread/INFO]: [WorldGuard] Loading region data...
+[07:59:53] [Server thread/WARN]: [WorldGuard] "WorldGuard v7.0.11+068ad68" has registered a listener for org.bukkit.event.entity.EntityKnockbackByEntityEvent on method "public void com.sk89q.worldguard.bukkit.listener.EventAbstractionListener.onEntityKnockbackByEntity(org.bukkit.event.entity.EntityKnockbackByEntityEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [].
+[07:59:53] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.1-b861
+[07:59:53] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.1-b861" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
+[07:59:53] [Server thread/INFO]: [Multiverse-Core] §aWe are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] WorldManager: Can't load this world because the folder was deleted/moved: duel_plain
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] Use '/mv remove' to remove it from the config!
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] WorldManager: Can't load this world because the folder was deleted/moved: duel_badlands
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] Use '/mv remove' to remove it from the config!
+[07:59:54] [Server thread/INFO]: [VoidGen] Generator settings have not been set. Using default values:
+[07:59:54] [Server thread/INFO]: [VoidGen] {"caves":false,"decoration":false,"mobs":false,"structures":false,"noise":false,"surface":false,"bedrock":false}
+[07:59:54] [Server thread/ERROR]: [MapSerializer] Could not deserialize key grass into class net.minecraft.world.item.Item at [entities, spawning, alt-item-despawn-rate, items]
+[07:59:54] [Server thread/INFO]: Preparing start region for dimension minecraft:afk
+[07:59:54] [Server thread/INFO]: Time elapsed: 250 ms
+[07:59:54] [Server thread/INFO]: [WorldGuard] (AFK) TNT ignition is PERMITTED.
+[07:59:54] [Server thread/INFO]: [WorldGuard] (AFK) Lighters are PERMITTED.
+[07:59:54] [Server thread/INFO]: [WorldGuard] (AFK) Lava fire is PERMITTED.
+[07:59:54] [Server thread/INFO]: [WorldGuard] (AFK) Fire spread is UNRESTRICTED.
+[07:59:54] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'AFK'
+[07:59:54] [Server thread/INFO]: [VoidGen] Generator settings have not been set. Using default values:
+[07:59:54] [Server thread/INFO]: [VoidGen] {"caves":false,"decoration":false,"mobs":false,"structures":false,"noise":false,"surface":false,"bedrock":false}
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] WorldManager: Can't load this world because the folder was deleted/moved: Spawn_nether
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] Use '/mv remove' to remove it from the config!
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] WorldManager: Can't load this world because the folder was deleted/moved: duel_Milk_And_Cereal_Milk_And_Cereal
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] Use '/mv remove' to remove it from the config!
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] WorldManager: Can't load this world because the folder was deleted/moved: world
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] Use '/mv remove' to remove it from the config!
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] WorldManager: Can't load this world because the folder was deleted/moved: world_the_end
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] Use '/mv remove' to remove it from the config!
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] WorldManager: Can't load this world because the folder was deleted/moved: world_nether
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] Use '/mv remove' to remove it from the config!
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] WorldManager: Can't load this world because the folder was deleted/moved: Spawn_the_end
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] Use '/mv remove' to remove it from the config!
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] WorldManager: Can't load this world because the folder was deleted/moved: Spawn
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] Use '/mv remove' to remove it from the config!
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] WorldManager: Can't load this world because the folder was deleted/moved: duel_sand
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] Use '/mv remove' to remove it from the config!
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] WorldManager: Can't load this world because the folder was deleted/moved: duel_netherite
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] Use '/mv remove' to remove it from the config!
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] WorldManager: Can't load this world because the folder was deleted/moved: duel_Plains7
+[07:59:54] [Server thread/WARN]: [Multiverse-Core] Use '/mv remove' to remove it from the config!
+[07:59:54] [Server thread/INFO]: [Multiverse-Core] 4 - World(s) loaded.
+[07:59:54] [Server thread/INFO]: [Multiverse-Core] Version 4.3.1-b861 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
+[07:59:54] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.6
+[07:59:55] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[07:59:55] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.8.2-SNAPSHOT-5b666f3a
+[07:59:56] [Server thread/INFO]: [MythicMobs] Failed to parse class io.lumine.mythic.core.volatilecode.v1_21_R1.ai.goals.CreeperSwellGoal$MythicSwellGoal
+[07:59:56] [Server thread/INFO]: [MythicMobs] Failed to parse class io.lumine.mythic.core.volatilecode.v1_21_R1.ai.goals.LookAtTargetGoal$LookAtTarget
+[07:59:56] [Server thread/INFO]: [MythicMobs] Failed to parse class io.lumine.mythic.core.volatilecode.v1_21_R1.ai.goals.MeleeAttackGoal$ModifiedMeleeAttackGoal
+[07:59:56] [Server thread/INFO]: [MythicMobs] Failed to parse class io.lumine.mythic.core.volatilecode.v1_21_R1.ai.goals.MoveToBlockGoal$GoToBlockGoal
+[07:59:56] [Server thread/INFO]: [MythicMobs] Failed to parse class io.lumine.mythic.core.volatilecode.v1_21_R1.ai.goals.MoveToLavaGoal$StriderGoToLavaGoal
+[07:59:56] [Server thread/INFO]: [MythicMobs] Failed to parse class io.lumine.mythic.core.volatilecode.v1_21_R1.ai.goals.MoveToWaterGoal$TurtleGoToWaterGoal
+[07:59:56] [Server thread/INFO]: [MythicMobs] Failed to parse class io.lumine.mythic.core.volatilecode.v1_21_R1.ai.goals.SpiderAttackGoal$SpiderMeleeAttackGoal
+[07:59:56] [Server thread/INFO]: [MythicMobs] Failed to parse class io.lumine.mythic.core.volatilecode.v1_21_R1.ai.goals.ZombieAttackGoal$ZombieMeleeAttackGoal
+[07:59:57] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.21.0)...
+[07:59:57] [Server thread/INFO]: [MythicMobs] The server is running Paper; enabled Paper exclusive functionality
+[07:59:58] [Server thread/INFO]: [MythicMobs] Mythic MMOItems Support has been enabled!
+[07:59:58] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: mythic [5.0.0]
+[07:59:58] [Server thread/INFO]: [MythicMobs] Mythic PlaceholderAPI Support has been enabled!
+[07:59:58] [Server thread/INFO]: [MythicMobs] Mythic Vault Support has been enabled!
+[07:59:58] [Server thread/INFO]: [MythicMobs] Mythic WorldGuard Support has been enabled!
+[07:59:58] [Server thread/INFO]: [MythicMobs] Base directory /home/container/plugins/MythicMobs/data
+[07:59:58] [Server thread/INFO]: [MythicMobs] Module directory /home/container/plugins/MythicMobs/data/worlds
+[08:00:03] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[08:00:04] [Server thread/INFO]: [MythicMobs] Loading Items...
+[08:00:04] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[08:00:04] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[08:00:05] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[08:00:05] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[08:00:05] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[08:00:05] [Server thread/INFO]: [MythicMobs] ✓ Loaded 8 mobs.
+[08:00:05] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[08:00:05] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[08:00:05] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 skills.
+[08:00:05] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[08:00:05] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 mythic items.
+[08:00:05] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
+[08:00:05] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[08:00:05] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.
+[08:00:06] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics
+[08:00:06] [Server thread/INFO]: [MythicMobs] ✓ MythicMobs Premium v5.8.2 ( build 5b666f3a ) has been successfully loaded!
+[08:00:06] [Server thread/INFO]: [DecentHolograms] Enabling DecentHolograms v2.8.16
+[08:00:07] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: 1.21! Trying to find NMS support
+[08:00:07] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_21_R1' loaded!
+[08:00:07] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'DecentHolograms' to create a bStats instance!
+[08:00:07] [Server thread/INFO]: [MythicLib] Enabling MythicLib v1.7.1-SNAPSHOT
+[08:00:07] [Server thread/INFO]: [MythicLib] Hooked onto TextDisplays (holograms)
+[08:00:07] [Server thread/INFO]: [MythicMobs] MMO Plugin Support has been enabled!
+[08:00:07] [Server thread/INFO]: [MythicLib] Hooked onto MythicMobs
+[08:00:07] [Server thread/INFO]: [MythicLib] Hooked onto ProtocolLib
+[08:00:07] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: mythiclib [1.7.1-SNAPSHOT]
+[08:00:07] [Server thread/INFO]: [MythicLib] Hooked onto PlaceholderAPI
+[08:00:08] [Server thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[08:00:08] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.1-dev+13-be3e641
+[08:00:09] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
+[08:00:10] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[08:00:10] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[08:00:10] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected 1.20.4+ Damage Event Provider as the provider for DamageEventProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected Reflection Sync Commands Provider as the provider for SyncCommandsProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected 1.21+ InventoryView Interface ABI Provider as the provider for InventoryViewProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected 1.20.6+ Potion Meta Provider as the provider for PotionMetaProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[08:00:10] [Server thread/INFO]: [Essentials] Loaded 43517 items from items.json.
+[08:00:10] [Server thread/INFO]: [Essentials] Using locale en_US
+[08:00:10] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[08:00:11] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[08:00:11] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[08:00:11] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[08:00:11] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.4-SNAPSHOT (b116-0e3163c)
+[08:00:13] [Server thread/INFO]: [AuraSkills] Enabling AuraSkills v2.2.8
+[08:00:14] [Server thread/INFO]: [AuraSkills] Loaded 21 message files
+[08:00:16] [Server thread/INFO]: [AuraSkills] Successfully registered hook DecentHolograms
+[08:00:16] [Server thread/INFO]: [AuraSkills] Successfully registered hook LuckPerms
+[08:00:16] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: auraskills [2.2.8]
+[08:00:16] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: aureliumskills [2.2.8]
+[08:00:16] [Server thread/INFO]: [AuraSkills] Successfully registered hook PlaceholderAPI
+[08:00:16] [Server thread/INFO]: [AuraSkills] Successfully registered hook ProtocolLib
+[08:00:16] [Server thread/INFO]: [AuraSkills] Successfully registered hook Vault
+[08:00:16] [Server thread/INFO]: [AuraSkills] Successfully registered hook WorldGuard
+[08:00:16] [Server thread/INFO]: [AuraSkills] Successfully registered hook MythicMobs
+[08:00:16] [Server thread/INFO]: [AuraSkills] Loaded 151 config options in 219 ms
+[08:00:16] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: 1.21! Trying to find NMS support
+[08:00:16] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_21_R1' loaded!
+[08:00:16] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'AuraSkills' to create a bStats instance!
+[08:00:16] [Server thread/INFO]: [AuraSkills] Loaded 3 blocked/disabled worlds
+[08:00:17] [Server thread/INFO]: [AuraSkills] [ACF] Enabled Asynchronous Tab Completion Support!
+[08:00:17] [Server thread/INFO]: [MMOCore] Enabling MMOCore v1.12.1-SNAPSHOT
+[08:00:17] [Server thread/INFO]: [MMOCore] [STDOUT] [Spigotunlocked.com] - Hello
+[08:00:17] [Server thread/WARN]: Nag author(s): '[Indyuce]' of 'MMOCore v1.12.1-SNAPSHOT' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[08:00:17] [Server thread/INFO]: [MMOCore] Hooked onto Vault
+[08:00:17] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: mmocore [1.12.1-SNAPSHOT]
+[08:00:17] [Server thread/INFO]: [MMOCore] Hooked onto PlaceholderAPI
+[08:00:17] [Server thread/INFO]: [MMOCore] Hooked onto WorldGuard
+[08:00:17] [Server thread/INFO]: [MMOCore] Hooked onto MythicMobs
+[08:00:18] [pool-26-thread-1/WARN]: [floodgate] 
+**********************************
+* You specified an empty prefix in your Floodgate config for Bedrock players!
+* Should a Java player join and a Bedrock player join with the same username, unwanted results and conflicts will happen!
+* We strongly recommend using . as the prefix, but other alternatives that will not conflict include: +, - and *
+**********************************
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load custom mining condition 'region{name="example_region,example_region2,__global__"}': Could not match any condition to 'region' in database
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load exp curve from file 'levels.txt': java.lang.NumberFormatException: For input string: ""
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load exp curve from file 'mining.txt': java.lang.NumberFormatException: For input string: "# 207261KNQMHTZ"
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load custom mining condition 'region{name="example_region,example_region2,__global__"}': Could not match any condition to 'region' in database
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load profession from file 'alchemy.yml': Could not find exp curve with ID 'levels'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load profession from file 'enchanting.yml': Could not find exp curve with ID 'levels'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load profession from file 'farming.yml': Could not find exp curve with ID 'levels'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load profession from file 'fishing.yml': Could not find exp curve with ID 'levels'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load profession from file 'mining.yml': Could not find exp curve with ID 'mining'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load profession from file 'smelting.yml': Could not find exp curve with ID 'levels'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load profession from file 'smithing.yml': Could not find exp curve with ID 'levels'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load profession from file 'woodcutting.yml': Could not find exp curve with ID 'levels'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load class from file 'arcane-mage.yml': Could not find exp curve with ID 'levels'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load class from file 'human.yml': Could not find exp curve with ID 'levels'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load class from file 'mage.yml': Could not find exp curve with ID 'levels'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load class from file 'marksman.yml': Could not find exp curve with ID 'levels'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load class from file 'paladin.yml': Could not find exp curve with ID 'levels'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load class from file 'rogue.yml': Could not find exp curve with ID 'levels'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load class from file 'warrior.yml': Could not find exp curve with ID 'levels'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load objective '1' from quest 'adv-begins': Could not find world world
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load objective '2' from quest 'adv-begins': Could not match any objective to 'talkto' in database
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load objective '2' from quest 'fetch-mango': Could not match any objective to 'getitem' in database
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load level requirement 'mining' from quest 'tutorial': Could not find profession called 'mining'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load objective '1' from quest 'tutorial': Could not find world world
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load objective '3' from quest 'tutorial': Could not match any objective to 'getitem' in database
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load objective '4' from quest 'tutorial': Could not match any objective to 'talkto' in database
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load objective '5' from quest 'tutorial': Could not match any objective to 'killmythicmob' in database
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load loot chest region 'sample-region' from file 'loot-chests.yml': Could not find world 'world_name_here'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load waypoint 'spawn' from file 'waypoints.yml': Could not find world with name 'world'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load waypoint 'spawn1' from file 'waypoints.yml': Could not find world with name 'world'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load waypoint 'spawn2' from file 'waypoints.yml': Could not find world with name 'world'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load item 'mining-profession' from inventory 'player-stats': The validated expression is false
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load item 'woodcutting-profession' from inventory 'player-stats': The validated expression is false
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load item 'farming-profession' from inventory 'player-stats': The validated expression is false
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load item 'fishing-profession' from inventory 'player-stats': The validated expression is false
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load item 'alchemy-profession' from inventory 'player-stats': The validated expression is false
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load item 'smithing-profession' from inventory 'player-stats': The validated expression is false
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load item 'enchanting-profession' from inventory 'player-stats': The validated expression is false
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load item 'smelting-profession' from inventory 'player-stats': The validated expression is false
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load item 'class-rogue' from inventory 'class-select': Could not find class with ID 'ROGUE'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load item 'class-mage' from inventory 'class-select': Could not find class with ID 'MAGE'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load item 'class-marksman' from inventory 'class-select': Could not find class with ID 'MARKSMAN'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load item 'class-warrior' from inventory 'class-select': Could not find class with ID 'WARRIOR'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load item 'class-paladin' from inventory 'class-select': Could not find class with ID 'PALADIN'
+[08:00:18] [Server thread/WARN]: [MMOCore] Could not load item 'arcane-mage' from inventory 'subclass-select': Could not find class with ID 'ARCANE_MAGE'
+[08:00:18] [Server thread/INFO]: [MMOCore] Hooked parties onto MMOCore
+[08:00:18] [Server thread/INFO]: [MMOCore] Hooked guilds onto MMOCore
+[08:00:19] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.21.1-dev+13-be3e641
+[08:00:19] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
+[08:00:19] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.7.1-SNAPSHOT
+[08:00:20] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-bCUSTOM
+[08:00:20] [Server thread/INFO]: [AuthMe] SQLite Setup finished
+[08:00:20] [Server thread/INFO]: [AuthMe] Hooked into LuckPerms!
+[08:00:21] [Server thread/INFO]: [AuthMe] Hooked successfully into Essentials
+[08:00:21] [Server thread/INFO]: [AuthMe] Hooked successfully into Multiverse-Core
+[08:00:21] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[08:00:21] [Server thread/INFO]: [MMOItems] Enabling MMOItems v6.10.1-SNAPSHOT
+[08:00:22] [Server thread/INFO]: [MMOItems] Hooked onto MythicMobs
+[08:00:22] [Server thread/INFO]: [MMOItems] Hooked onto MMOCore
+[08:00:22] [Server thread/INFO]: [MMOItems] Now using MMOCore as RPG core plugin
+[08:00:22] [Server thread/ERROR]: [MMOItems] Could not initialize RPG plugin compatibility with AuraSkills:
+[08:00:22] [Server thread/WARN]: java.lang.reflect.InvocationTargetException
+[08:00:22] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+[08:00:22] [Server thread/WARN]: 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+[08:00:22] [Server thread/WARN]: 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+[08:00:22] [Server thread/WARN]: 	at MMOItems-6.10.1-157-7 (1).jar//net.Indyuce.mmoitems.comp.rpg.RPGHandler$PluginEnum.load(RPGHandler.java:54)
+[08:00:22] [Server thread/WARN]: 	at MMOItems-6.10.1-157-7 (1).jar//net.Indyuce.mmoitems.MMOItems.findRpgPlugins(MMOItems.java:330)
+[08:00:22] [Server thread/WARN]: 	at MMOItems-6.10.1-157-7 (1).jar//net.Indyuce.mmoitems.MMOItems.onEnable(MMOItems.java:168)
+[08:00:22] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:288)
+[08:00:22] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202)
+[08:00:22] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109)
+[08:00:22] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520)
+[08:00:22] [Server thread/WARN]: 	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:640)
+[08:00:22] [Server thread/WARN]: 	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:589)
+[08:00:22] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:754)
+[08:00:22] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:516)
+[08:00:22] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:329)
+[08:00:22] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1215)
+[08:00:22] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330)
+[08:00:22] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[08:00:22] [Server thread/WARN]: Caused by: java.lang.IllegalArgumentException: A stat with ID 'ADDITIONAL_STRENGTH' already exists
+[08:00:22] [Server thread/WARN]: 	at org.apache.commons.lang.Validate.isTrue(Validate.java:136)
+[08:00:22] [Server thread/WARN]: 	at MMOItems-6.10.1-157-7 (1).jar//net.Indyuce.mmoitems.manager.StatManager.lambda$register$2(StatManager.java:216)
+[08:00:22] [Server thread/WARN]: 	at java.base/java.util.HashMap.compute(HashMap.java:1324)
+[08:00:22] [Server thread/WARN]: 	at MMOItems-6.10.1-157-7 (1).jar//net.Indyuce.mmoitems.manager.StatManager.register(StatManager.java:215)
+[08:00:22] [Server thread/WARN]: 	at MMOItems-6.10.1-157-7 (1).jar//net.Indyuce.mmoitems.comp.rpg.AuraSkillsHook.<init>(AuraSkillsHook.java:53)
+[08:00:22] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+[08:00:22] [Server thread/WARN]: 	... 17 more
+[08:00:22] [Server thread/INFO]: [MMOItems CATALYST LUCK_CHARM] Could not load base item data 'additional-experience-enchanting': Could not find stat with ID 'ADDITIONAL_EXPERIENCE_ENCHANTING'
+[08:00:22] [Server thread/INFO]: [MMOItems Template Modifiers] Loading template modifiers, please wait..
+[08:00:22] [Server thread/INFO]: [MMOItems Item Templates] Loading item templates, please wait...
+[08:00:22] [Server thread/INFO]: [MMOItems] Hooked onto Vault
+[08:00:22] [Server thread/INFO]: [MMOItems] Loading crafting stations, please wait..
+[08:00:22] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: mmoitems [6.10.1-SNAPSHOT]
+[08:00:22] [Server thread/INFO]: [MMOItems] Hooked onto PlaceholderAPI
+[08:00:22] [Server thread/INFO]: [MMOItems] Loading recipes, please wait...
+[08:00:23] [Server thread/INFO]: [MiniMOTD] Enabling MiniMOTD v2.1.3
+[08:00:25] [Server thread/INFO]: [ajLeaderboards] Enabling ajLeaderboards v2.9.0
+[08:00:27] [Server thread/INFO]: [ajLeaderboards] Using H2 flatfile for board cache. (h2)
+[08:00:27] [Server thread/INFO]: [ajLeaderboards] Loaded 4 boards
+[08:00:27] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: ajlb [2.9.0]
+[08:00:27] [Server thread/INFO]: [ajLeaderboards] PAPI placeholders successfully registered!
+[08:00:27] [Server thread/INFO]: [ajLeaderboards] ajLeaderboards v2.9.0 by ajgeiss0702 enabled!
+[08:00:27] [Server thread/INFO]: [ZelBounty] Enabling ZelBounty v2.0.2
+[08:00:27] [Server thread/INFO]: 
+[08:00:27] [Server thread/INFO]: 
+[08:00:27] [Server thread/INFO]:  ____  _ _            ___              _ _ _         
+[08:00:27] [Server thread/INFO]: |  _ \(_) | __ ____  / _ \ _   _  __ _| (_) |_ _   _ 
+[08:00:27] [Server thread/INFO]: | |_) | | |/ /|_  / | | | | | | |/ _` | | | __| | | |
+[08:00:27] [Server thread/INFO]: |  __/| |   <  / /  | |_| | |_| | (_| | | | |_| |_| |
+[08:00:27] [Server thread/INFO]: |_|   |_|_|\_\/___|  \__\_\\__,_|\__,_|_|_|\__|\__, |
+[08:00:27] [Server thread/INFO]:                                                |___/ 
+[08:00:27] [Server thread/INFO]: 
+[08:00:27] [Server thread/INFO]: ZelBounty - 2.0.2
+[08:00:27] [Server thread/INFO]: 
+[08:00:27] [Server thread/INFO]: Current Java Version: 21.0.4
+[08:00:27] [Server thread/INFO]: Current OS: Linux
+[08:00:27] [Server thread/INFO]: 
+[08:00:27] [Server thread/INFO]: NOTE: This plugin requires Vault and an economy plugin to function properly.
+[08:00:27] [Server thread/INFO]: 
+[08:00:27] [Server thread/INFO]: This software is developed by Pikz Studio. All rights reserved.
+[08:00:27] [Server thread/INFO]: 
+[08:00:27] [Server thread/INFO]: [ZelBounty] Enabling plugin...
+[08:00:28] [Server thread/INFO]: -------------------
+[08:00:28] [Server thread/INFO]: License Key: JFF**********
+[08:00:28] [Server thread/INFO]: Owner: DonutSMP
+[08:00:28] [Server thread/INFO]: Creation Date: 6/2/24, 4:13 AM
+[08:00:28] [Server thread/INFO]: Product: ZelBounty
+[08:00:28] [Server thread/INFO]: Allowed IPs: [*]
+[08:00:28] [Server thread/INFO]: -------------------
+[08:00:28] [Server thread/WARN]: [ZelBounty] "ZelBounty v2.0.2" has registered a listener for com.destroystokyo.paper.event.brigadier.CommandRegisteredEvent on method "public void bg.pikz.relocated.lamp.commands.bukkit.brigadier.PaperCommodore$CommandRegisterListener.onCommandRegistered(com.destroystokyo.paper.event.brigadier.CommandRegisteredEvent<?>)", but the event is Deprecated. "This event has been superseded by the Commands API and will be removed in a future release. Listen to LifecycleEvents.COMMANDS instead."; please notify the authors [].
+[08:00:29] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: zelbounty [1.0.1]
+[08:00:29] [Server thread/INFO]: [ZelBounty] Plugin enabled in 1.58s!
+[08:00:29] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.3.2
+[08:00:29] [Server thread/INFO]: [TAB] Enabling TAB v5.2.0
+[08:00:29] [Server thread/INFO]: [TAB] Loaded NMS hook in 109ms
+[08:00:29] [pool-73-thread-1/INFO]: [ajLeaderboards] An update is available! (2.10.1) Run /ajLeaderboards update to download it!
+[08:00:30] [Server thread/INFO]: [TAB] [WARN] File plugins/TAB/animations.yml has broken syntax.
+[08:00:30] [Server thread/INFO]: [TAB] Error message from yaml parser: special characters are not allowed
+[08:00:30] [Server thread/INFO]: [TAB] Suggestions to fix yaml syntax:
+[08:00:30] [Server thread/INFO]: [TAB] - Remove 2 space(s) from line 98
+[08:00:30] [Server thread/INFO]: [TAB] [WARN] Did not enable due to a broken configuration file.
+[08:00:30] [Server thread/INFO]: [Skript] Enabling Skript v2.11.0
+[08:00:32] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] A new version of Skript is available: 2.11.1 (you're currently running 2.11.0)
+[08:00:32] [ForkJoinPool.commonPool-worker-1/INFO]: Download it at: https://github.com/SkriptLang/Skript/releases/download/2.11.1/Skript-2.11.1.jar
+[08:00:34] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
+[08:00:34] [Server thread/INFO]: [LPC] Enabling LPC v3.6.0
+[08:00:34] [Server thread/INFO]: [InteractiveChat] Enabling InteractiveChat v4.2.16.0
+[08:00:35] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] Loaded 5330 aliases in 955ms
+[08:00:35] [Server thread/INFO]: [InteractiveChat] Opened Sqlite database successfully
+[08:00:36] [Server thread/INFO]: [InteractiveChat] InteractiveChat has hooked into Essentials!
+[08:00:36] [Server thread/INFO]: [InteractiveChat] InteractiveChat has hooked into ViaVersion!
+[08:00:36] [Server thread/INFO]: [InteractiveChat] InteractiveChat has hooked into LuckPerms!
+[08:00:36] [Server thread/INFO]: [InteractiveChat] InteractiveChat has hooked into Floodgate!
+[08:00:37] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: interactivechat [4.2.16.0]
+[08:00:37] [Server thread/INFO]: [InteractiveChat] InteractiveChat has been Enabled!
+[08:00:37] [Server thread/INFO]: [GSit] Enabling GSit v2.3.2
+[08:00:37] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: gsit [2.3.2]
+[08:00:37] [Server thread/INFO]: [WorldGuard] Registering session handler dev.geco.gsit.link.worldguard.RegionFlagHandler
+[08:00:37] [Server thread/INFO]: [GSit] The plugin was successfully enabled.
+[08:00:37] [Server thread/INFO]: [GSit] Link with PlaceholderAPI successful!
+[08:00:37] [Server thread/INFO]: [GSit] Link with WorldGuard successful!
+[08:00:37] [Server thread/INFO]: [FancyHolograms] Enabling FancyHolograms v2.3.3
+[08:00:37] [FancyHolograms-Holograms/INFO]: [FancyHolograms] Loaded 0 holograms for all loaded worlds
+[08:00:37] [Server thread/INFO]: [EconomyShopGUI] Enabling EconomyShopGUI v6.12.1
+[08:00:37] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Using lang-en.yml as language file.
+[08:00:37] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Completed loading 16 section configs from /sections/
+[08:00:37] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Completed loading 16 shop configs from /shops/
+[08:00:37] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Updating Shop settings...
+[08:00:37] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Successfully hooked into Vault and using EssentialsX Economy as economy provider
+[08:00:37] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Completed loading 1 economy provider(s) for all 14 shop sections.
+[08:00:37] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Using minecraft version 1.21...
+[08:00:37] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Spawner provider set to AUTO in config
+[08:00:37] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Automatically searching for compatible spawner provider....
+[08:00:37] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Failed to automatically find compatible spawner provider, using default...
+[08:00:37] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: esgui [1.1.0]
+[08:00:37] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Debug mode is enabled.
+[08:00:37] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Loading all items...
+[08:00:37] [Server thread/INFO]: [EconomyShopGUI] [INFO]: Initialized - Took 428ms to complete
+[08:00:37] [Server thread/INFO]: [BreweryX] Enabling BreweryX v3.4.10;HEAD
+[08:00:37] [ESGUI_UTIL_THREAD #0/INFO]: [EconomyShopGUI] [INFO]: There is an update available for EconomyShopGUI, you are running v6.12.1 but found v6.12.2.
+[08:00:37] [ESGUI_UTIL_THREAD #0/INFO]: [EconomyShopGUI] [INFO]: Download at: https://www.spigotmc.org/resources/economyshopgui.69927/
+[08:00:38] [ForkJoinPool.commonPool-worker-1/WARN]: [FancyHolograms] 
+-------------------------------------------------------
+You are not using the latest version of the FancyHolograms plugin.
+Please update to the newest version (2.4.2).
+https://modrinth.com/plugin/FancyHolograms
+-------------------------------------------------------
+
+[08:00:38] [Server thread/INFO]: [BreweryX] Using language: en.yml
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: Something went wrong trying to load a config file! (Class: RecipesFile)
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: com.dre.brewery.depend.okaeri.configs.exception.OkaeriException: failed to initialize com.dre.brewery.configuration.files.RecipesFile [class com.dre.brewery.configuration.configurer.BreweryXConfigurer]
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: com.dre.brewery.depend.okaeri.configs.ConfigManager.create(ConfigManager.java:41)
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: com.dre.brewery.configuration.ConfigHead.createConfig(ConfigHead.java:175)
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: com.dre.brewery.configuration.ConfigHead.createConfig(ConfigHead.java:201)
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: com.dre.brewery.configuration.ConfigHead.createConfig(ConfigHead.java:212)
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: com.dre.brewery.configuration.ConfigHead.getConfig(ConfigHead.java:115)
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: com.dre.brewery.configuration.ConfigManager.getConfig(ConfigManager.java:61)
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: com.dre.brewery.configuration.ConfigManager.loadRecipes(ConfigManager.java:137)
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: com.dre.brewery.BreweryPlugin.onEnable(BreweryPlugin.java:135)
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:288)
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202)
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109)
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520)
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:640)
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:589)
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:754)
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:516)
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:329)
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1215)
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330)
+[08:00:38] [Server thread/INFO]: [BreweryX] ERROR: java.base/java.lang.Thread.run(Thread.java:1583)
+[08:00:38] [Server thread/INFO]: [BreweryX] Caused by: com.dre.brewery.depend.okaeri.configs.exception.OkaeriException: failed #load
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.depend.okaeri.configs.OkaeriConfig.load(OkaeriConfig.java:466)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.depend.okaeri.configs.OkaeriConfig.load(OkaeriConfig.java:491)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.depend.okaeri.configs.OkaeriConfig.load(OkaeriConfig.java:505)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.depend.okaeri.configs.OkaeriConfig.load(OkaeriConfig.java:479)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.depend.okaeri.configs.OkaeriConfig.load(OkaeriConfig.java:426)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.configuration.ConfigHead.lambda$createConfig$1(ConfigHead.java:180)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.depend.okaeri.configs.ConfigManager.create(ConfigManager.java:38)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.configuration.ConfigHead.createConfig(ConfigHead.java:175)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.configuration.ConfigHead.createConfig(ConfigHead.java:201)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.configuration.ConfigHead.createConfig(ConfigHead.java:212)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.configuration.ConfigHead.getConfig(ConfigHead.java:115)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.configuration.ConfigManager.getConfig(ConfigManager.java:61)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.configuration.ConfigManager.loadRecipes(ConfigManager.java:137)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.BreweryPlugin.onEnable(BreweryPlugin.java:135)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:288)
+[08:00:38] [Server thread/INFO]: [BreweryX]      io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202)
+[08:00:38] [Server thread/INFO]: [BreweryX]      io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:640)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:589)
+[08:00:38] [Server thread/INFO]: [BreweryX]      net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:754)
+[08:00:38] [Server thread/INFO]: [BreweryX]      net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:516)
+[08:00:38] [Server thread/INFO]: [BreweryX]      net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:329)
+[08:00:38] [Server thread/INFO]: [BreweryX]      net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1215)
+[08:00:38] [Server thread/INFO]: [BreweryX]      net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330)
+[08:00:38] [Server thread/INFO]: [BreweryX]      java.base/java.lang.Thread.run(Thread.java:1583)
+[08:00:38] [Server thread/INFO]: [BreweryX] Caused by: unacceptable code point '' (0x8) special characters are not allowed
+in "'reader'", position 338
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.reader.StreamReader.update(StreamReader.java:208)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.reader.StreamReader.ensureEnoughData(StreamReader.java:173)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.reader.StreamReader.peek(StreamReader.java:133)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.scanner.ScannerImpl.scanFlowScalarNonSpaces(ScannerImpl.java:1903)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.scanner.ScannerImpl.scanFlowScalar(ScannerImpl.java:1885)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.scanner.ScannerImpl.fetchFlowScalar(ScannerImpl.java:1057)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.scanner.ScannerImpl.fetchSingle(ScannerImpl.java:1032)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:423)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:238)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingValue.produce(ParserImpl.java:669)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:161)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:57)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:43)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:136)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:116)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:241)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:205)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.composer.Composer.composeKeyNode(Composer.java:359)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:344)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:131)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.composer.Composer.getSingleNode(Composer.java:157)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:178)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:493)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.yaml.snakeyaml.Yaml.load(Yaml.java:434)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.configuration.configurer.BreweryXConfigurer.load(BreweryXConfigurer.java:146)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.depend.okaeri.configs.OkaeriConfig.load(OkaeriConfig.java:464)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.depend.okaeri.configs.OkaeriConfig.load(OkaeriConfig.java:491)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.depend.okaeri.configs.OkaeriConfig.load(OkaeriConfig.java:505)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.depend.okaeri.configs.OkaeriConfig.load(OkaeriConfig.java:479)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.depend.okaeri.configs.OkaeriConfig.load(OkaeriConfig.java:426)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.configuration.ConfigHead.lambda$createConfig$1(ConfigHead.java:180)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.depend.okaeri.configs.ConfigManager.create(ConfigManager.java:38)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.configuration.ConfigHead.createConfig(ConfigHead.java:175)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.configuration.ConfigHead.createConfig(ConfigHead.java:201)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.configuration.ConfigHead.createConfig(ConfigHead.java:212)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.configuration.ConfigHead.getConfig(ConfigHead.java:115)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.configuration.ConfigManager.getConfig(ConfigManager.java:61)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.configuration.ConfigManager.loadRecipes(ConfigManager.java:137)
+[08:00:38] [Server thread/INFO]: [BreweryX]      com.dre.brewery.BreweryPlugin.onEnable(BreweryPlugin.java:135)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:288)
+[08:00:38] [Server thread/INFO]: [BreweryX]      io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202)
+[08:00:38] [Server thread/INFO]: [BreweryX]      io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:640)
+[08:00:38] [Server thread/INFO]: [BreweryX]      org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:589)
+[08:00:38] [Server thread/INFO]: [BreweryX]      net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:754)
+[08:00:38] [Server thread/INFO]: [BreweryX]      net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:516)
+[08:00:38] [Server thread/INFO]: [BreweryX]      net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:329)
+[08:00:38] [Server thread/INFO]: [BreweryX]      net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1215)
+[08:00:38] [Server thread/INFO]: [BreweryX]      net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330)
+[08:00:38] [Server thread/INFO]: [BreweryX]      java.base/java.lang.Thread.run(Thread.java:1583)
+[08:00:38] [Server thread/INFO]: [BreweryX] WARNING: Resolve the issue in the file and run /brewery reload
+[08:00:38] [Server thread/INFO]: [BreweryX] Minecraft version: 1.21
+[08:00:38] [Server thread/INFO]: [BreweryX] DataManager created: SQLite
+[08:00:39] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: breweryx [3.4.10;HEAD]
+[08:00:39] [Server thread/INFO]: [BreweryX] Using scheduler: PaperScheduler
+[08:00:39] [Server thread/INFO]: [BreweryX] Environment: Paper
+[08:00:39] [Server thread/INFO]: [BreweryX] BreweryX enabled!
+[08:00:39] [Server thread/INFO]: [BetterTeams] Enabling BetterTeams v4.12.0
+[08:00:39] [Server thread/INFO]: [BetterTeams] [BetterTeams] Checking if the file messages.yml is up to date
+[08:00:39] [Server thread/INFO]: [BetterTeams] [BetterTeams] File is up to date
+[08:00:39] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: betterTeams [4.12.0]
+[08:00:39] [Server thread/INFO]: [BetterTeams] Display team name config value: prefix
+[08:00:39] [Server thread/INFO]: [BetterTeams] Loading below name. Type: PREFIX
+[08:00:39] [Server thread/INFO]: [BetterTeams] teamManagement declared: com.booksaw.betterTeams.events.MCTeamManagement@7c5959f9
+[08:00:39] [Server thread/INFO]: [BetterRTP] Enabling BetterRTP v3.6.13
+[08:00:39] [Server thread/INFO]: [BetterRTP] Cooldown = 600
+[08:00:40] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: betterrtp [3.6.13]
+[08:00:40] [Server thread/INFO]: [AuthMePE] Enabling AuthMePE v1.1.3
+[08:00:40] [Server thread/INFO]: ---------------------
+[08:00:40] [Server thread/INFO]: Author: ShinTHL09
+[08:00:40] [Server thread/INFO]: Plugin: Has Enable
+[08:00:40] [Server thread/INFO]: Name: AuthMePE
+[08:00:40] [Server thread/INFO]: Version: 1.1.3
+[08:00:40] [Server thread/INFO]: Add support folia by Tuanvo0022
+[08:00:40] [Server thread/INFO]: ---------------------
+[08:00:40] [Server thread/INFO]: [AdvancedSeasons] Enabling AdvancedSeasons v1.7.15
+[08:00:41] [Server thread/WARN]: [AdvancedSeasons] Minecraft Version: MC1_21_R1, is paper: true
+[08:00:41] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: advancedseasons [1.0.0]
+[08:00:41] [Server thread/INFO]: [AdvancedBan] Enabling AdvancedBan v2.3.0
+[08:00:41] [Server thread/INFO]: [me.leoko.advancedban.shaded.com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[08:00:46] [Server thread/INFO]: [me.leoko.advancedban.shaded.com.zaxxer.hikari.pool.PoolBase] HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+[08:00:46] [Server thread/INFO]: [me.leoko.advancedban.shaded.com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[08:00:47] [Server thread/INFO]: 
+ 
+[]=====[Enabling AdvancedBan]=====[]
+| Information:
+|   Name: AdvancedBan
+|   Developer: Leoko
+|   Version: 2.3.0
+|   Storage: HSQLDB (local)
+| Support:
+|   Github: https://github.com/DevLeoko/AdvancedBan/issues
+|   Discord: https://discord.gg/ycDG6rS
+| Twitter: @LeokoGar
+| Update:
+|   You have the newest version
+[]================================[]
+ 
+[08:00:47] [Server thread/INFO]: [spark] Starting background profiler...
+[08:00:48] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[08:00:48] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[08:00:48] [Server thread/INFO]: [Geyser-Spigot] 
+[08:00:48] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.7.1-b830 (git-master-472ed8c)
+[08:00:48] [Server thread/INFO]: [Geyser-Spigot] 
+[08:00:48] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[08:01:05] [epollEventLoopGroup-4-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 27027
+[08:01:05] [Server thread/INFO]: [Geyser-Spigot] Done (17.744s)! Run /geyser help for help!
+[08:01:06] [Server thread/INFO]: Done preparing level "spawn" (76.828s)
+[08:01:06] [Server thread/INFO]: Running delayed init tasks
+[08:01:06] [Craft Scheduler Thread - 6 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[08:01:06] [Craft Scheduler Thread - 15 - AuthMe/INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[08:01:06] [Craft Scheduler Thread - 15 - AuthMe/WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[08:01:06] [Craft Scheduler Thread - 15 - AuthMe/INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[08:01:06] [Craft Scheduler Thread - 10 - DecentHolograms/INFO]: [DecentHolograms] Loading holograms... 
+[08:01:06] [Craft Scheduler Thread - 13 - Essentials/INFO]: [Essentials] Đang tìm nạp thông tin phiên bản...
+[08:01:06] [Craft Scheduler Thread - 15 - AuthMe/WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+[08:01:06] [Craft Scheduler Thread - 21 - InteractiveChat/INFO]: [InteractiveChat] Loading languages...
+[08:01:06] [Craft Scheduler Thread - 9 - DecentHolograms/INFO]: 
+A newer version of DecentHolograms is available. Download it from: 
+- https://www.spigotmc.org/resources/96927/
+- https://modrinth.com/plugin/decentholograms
+[08:01:06] [Server thread/INFO]: [com.fastasyncworldedit.bukkit.regions.WorldGuardFeature] Plugin 'WorldGuard' found. Using it now.
+[08:01:06] [Server thread/INFO]: [com.fastasyncworldedit.bukkit.FaweBukkit] Attempting to use plugin 'WorldGuard'
+[08:01:06] [Craft Scheduler Thread - 10 - DecentHolograms/INFO]: [DecentHolograms] Loaded 9 holograms!
+[08:01:06] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[08:01:07] [Craft Scheduler Thread - 17 - MiniMOTD/INFO]: [MiniMOTD] There is an update available for MiniMOTD!
+[08:01:07] [Craft Scheduler Thread - 17 - MiniMOTD/INFO]: [MiniMOTD] This server is running version v2.1.3, which is 3 versions outdated.
+[08:01:07] [Craft Scheduler Thread - 17 - MiniMOTD/INFO]: [MiniMOTD] Download the latest version, v2.1.6 from GitHub at the link below:
+[08:01:07] [Craft Scheduler Thread - 17 - MiniMOTD/INFO]: [MiniMOTD] https://github.com/jpenilla/MiniMOTD/releases/tag/v2.1.6
+[08:01:07] [Craft Scheduler Thread - 6 - MMOCore/INFO]: [MMOCore] A new build is available: 1.13 (you are running 1.12.1-SNAPSHOT)
+[08:01:07] [Craft Scheduler Thread - 6 - MMOCore/INFO]: [MMOCore] Download it here: https://www.spigotmc.org/resources/70575/
+[08:01:07] [Server thread/INFO]: [AuraSkills] Loaded 11 skills with 312 total sources
+[08:01:07] [Server thread/INFO]: [AuraSkills] Loaded 9 stats and 17 traits
+[08:01:08] [Server thread/INFO]: [AuraSkills] Loaded 22 pattern rewards and 0 level rewards
+[08:01:08] [Server thread/INFO]: [AuraSkills] Loaded 53 loot entries in 4 pools and 2 tables
+[08:01:08] [Server thread/WARN]: [AuraSkills] Error loading menu file skills.yml
+[08:01:08] [Server thread/WARN]: java.lang.IllegalArgumentException: Input byte array has incorrect ending byte at 96
+[08:01:08] [Server thread/WARN]: 	at java.base/java.util.Base64$Decoder.decode0(Base64.java:880)
+[08:01:08] [Server thread/WARN]: 	at java.base/java.util.Base64$Decoder.decode(Base64.java:570)
+[08:01:08] [Server thread/WARN]: 	at java.base/java.util.Base64$Decoder.decode(Base64.java:593)
+[08:01:08] [Server thread/WARN]: 	at AuraSkills-2.2.8.jar//dev.aurelium.auraskills.slate.util.SkullCreator.decodeSkinUrl(SkullCreator.java:314)
+[08:01:08] [Server thread/WARN]: 	at AuraSkills-2.2.8.jar//dev.aurelium.auraskills.slate.util.SkullCreator.mutateItemMeta(SkullCreator.java:334)
+[08:01:08] [Server thread/WARN]: 	at AuraSkills-2.2.8.jar//dev.aurelium.auraskills.slate.util.SkullCreator.itemWithBase64(SkullCreator.java:184)
+[08:01:08] [Server thread/WARN]: 	at AuraSkills-2.2.8.jar//dev.aurelium.auraskills.slate.item.parser.ConfigurateItemParser.parseSkullMeta(ConfigurateItemParser.java:236)
+[08:01:08] [Server thread/WARN]: 	at AuraSkills-2.2.8.jar//dev.aurelium.auraskills.slate.item.parser.ConfigurateItemParser.parseBaseItem(ConfigurateItemParser.java:84)
+[08:01:08] [Server thread/WARN]: 	at AuraSkills-2.2.8.jar//dev.aurelium.auraskills.slate.item.parser.SingleItemParser.parse(SingleItemParser.java:26)
+[08:01:08] [Server thread/WARN]: 	at AuraSkills-2.2.8.jar//dev.aurelium.auraskills.slate.menu.MenuLoader.loadMenu(MenuLoader.java:142)
+[08:01:08] [Server thread/WARN]: 	at AuraSkills-2.2.8.jar//dev.aurelium.auraskills.slate.menu.MenuLoader.loadAndAddMenu(MenuLoader.java:98)
+[08:01:08] [Server thread/WARN]: 	at AuraSkills-2.2.8.jar//dev.aurelium.auraskills.slate.menu.MenuLoader.loadMenus(MenuLoader.java:49)
+[08:01:08] [Server thread/WARN]: 	at AuraSkills-2.2.8.jar//dev.aurelium.auraskills.slate.Slate.loadMenus(Slate.java:63)
+[08:01:08] [Server thread/WARN]: 	at AuraSkills-2.2.8.jar//dev.aurelium.auraskills.bukkit.menus.MenuFileManager.loadMenus(MenuFileManager.java:42)
+[08:01:08] [Server thread/WARN]: 	at AuraSkills-2.2.8.jar//dev.aurelium.auraskills.bukkit.AuraSkills.registerAndLoadMenus(AuraSkills.java:380)
+[08:01:08] [Server thread/WARN]: 	at AuraSkills-2.2.8.jar//dev.aurelium.auraskills.bukkit.AuraSkills.lambda$onEnable$0(AuraSkills.java:255)
+[08:01:08] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:86)
+[08:01:08] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:475)
+[08:01:08] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1226)
+[08:01:08] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330)
+[08:01:08] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[08:01:08] [Server thread/INFO]: [AuraSkills] Loaded 5 menus
+[08:01:09] [Server thread/INFO]: [Skript] Loading variables...
+[08:01:09] [Server thread/INFO]: [Skript] Loaded 0 variables in 0.0 seconds
+[08:01:09] [Server thread/INFO]: [Skript] All scripts loaded without errors.
+[08:01:09] [Server thread/INFO]: [Skript]     No scripts were found, maybe you should write some ;)
+[08:01:09] [Server thread/INFO]: [Skript] Finished loading.
+[08:01:09] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: essentials [1.5.2]
+[08:01:09] [Server thread/WARN]: [PlaceholderAPI] Cannot load expansion griefprevention due to a missing plugin: GriefPrevention
+[08:01:09] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: listcounter [1.0.1]
+[08:01:09] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: luckperms [5.4-R2]
+[08:01:09] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: player [2.0.8]
+[08:01:09] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: playerlist [3.0.7]
+[08:01:09] [Server thread/WARN]: [PlaceholderAPI] Cannot load expansion playerstats due to a missing plugin: PlayerStats
+[08:01:09] [Server thread/WARN]: [PlaceholderAPI] Cannot load expansion playertime due to a missing plugin: PlayerTime
+[08:01:09] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: server [2.7.2]
+[08:01:09] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: statistic [2.0.1]
+[08:01:09] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: vault [1.8.3]
+[08:01:09] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: ViaVersion [2.0.0]
+[08:01:09] [Server thread/INFO]: 9 placeholder hook(s) registered! 3 placeholder hook(s) have an update available.
+[08:01:09] [Server thread/INFO]: Done (128.292s)! For help, type "help"
+[08:01:09] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2991ms or 59 ticks behind
+[08:01:09] [Server thread/INFO]: Timings Reset
+[08:01:09] [Craft Scheduler Thread - 9 - Vault/INFO]: [Vault] Checking for Updates ... 
+[08:01:09] [Craft Scheduler Thread - 9 - Vault/INFO]: [Vault] No new version available
+[08:01:09] [Server thread/INFO]: [AdvancedSeasons] Successfully hooked into ProtocolLib, AuraSkills, WorldGuard, PlaceholderAPI, MythicMobs, Geyser-Spigot, Essentials, Vault, LuckPerms, ViaVersion, Tab.
+[08:01:09] [Craft Scheduler Thread - 13 - Essentials/WARN]: [Essentials] Bạn đang chạy phiên bản dev EssentialsX 2 bản dựng cũ hơn!
+[08:01:09] [Craft Scheduler Thread - 13 - Essentials/WARN]: [Essentials] Tải xuống tại đây: https://essentialsx.net/downloads.html
+[08:01:10] [Craft Scheduler Thread - 5 - AuraSkills/INFO]: [AuraSkills] New update available! You are on version 2.2.8, latest version is 2.3.3
+[08:01:10] [Craft Scheduler Thread - 5 - AuraSkills/INFO]: [AuraSkills] Download it on Modrinth: https://modrinth.com/plugin/uDdZAVls/version/wmXK7Dm8
+[08:01:12] [Craft Scheduler Thread - 11 - InteractiveChat/INFO]: [InteractiveChat] Loaded all 1 languages!
+[08:01:19] [Server thread/INFO]: Server Plugins (40):
+[08:01:19] [Server thread/INFO]: Paper Plugins:
+[08:01:19] [Server thread/INFO]:  - EconomyShopGUI, FancyHolograms
+[08:01:19] [Server thread/INFO]: Bukkit Plugins:
+[08:01:19] [Server thread/INFO]:  - AdvancedBan, AdvancedSeasons, ajLeaderboards, AuraSkills, AuthMe, AuthMePE, BetterRTP, BetterTeams, BreweryX, DecentHolograms
+[08:01:19] [Server thread/INFO]:  Essentials, EssentialsChat, FastAsyncWorldEdit, floodgate, Geyser-Spigot, GSit, InteractiveChat, LPC, LuckPerms, MiniMOTD
+[08:01:19] [Server thread/INFO]:  MMOCore, MMOItems, MOTD, Multiverse-Core, MythicLib, MythicMobs, PlaceholderAPI, ProtocolLib, Skript, TAB
+[08:01:19] [Server thread/INFO]:  Vault, ViaBackwards, ViaVersion, VoidGen, Vulcan, WorldEdit, WorldGuard, ZelBounty
+[08:02:16] [epollEventLoopGroup-5-1/INFO]: [Geyser-Spigot] Bedrock user with ip: /116.106.99.242 has disconnected for reason Please log into Xbox to join this server.
+[08:04:07] [Server thread/INFO]: [Essentials] CONSOLE issued server command: /lag 
+[08:04:07] [Server thread/INFO]: Thời gian hoạt động: 5 minutes 8 seconds
+[08:04:07] [Server thread/INFO]: TPS hiện tại = 20
+[08:04:07] [Server thread/INFO]: Bộ nhớ tối đa: 1,544 MB.
+[08:04:07] [Server thread/INFO]: Bộ nhớ đã cấp phát: 1,040 MB.
+[08:04:07] [Server thread/INFO]: Bộ nhớ trống: 180 MB.
+[08:04:08] [Server thread/INFO]: World "spawn": 49 chunk, 79 thực thể, 4 ô.
+[08:04:08] [Server thread/INFO]: Nether "spawn_nether": 49 chunk, 7 thực thể, 0 ô.
+[08:04:08] [Server thread/INFO]: The End "spawn_the_end": 49 chunk, 10 thực thể, 0 ô.
+[08:04:08] [Server thread/INFO]: World "AFK": 49 chunk, 0 thực thể, 0 ô.
+[08:31:09] [Server thread/INFO]: [MMOCore] Autosaving player data, might take a while...
+[09:01:09] [Server thread/INFO]: [MMOCore] Autosaving player data, might take a while...
+[09:31:09] [Server thread/INFO]: [MMOCore] Autosaving player data, might take a while...
+[10:01:09] [Server thread/INFO]: [MMOCore] Autosaving player data, might take a while...
+[10:31:09] [Server thread/INFO]: [MMOCore] Autosaving player data, might take a while...
+[11:01:09] [Server thread/INFO]: [MMOCore] Autosaving player data, might take a while...
+[11:31:09] [Server thread/INFO]: [MMOCore] Autosaving player data, might take a while...
+[11:51:33] [epollEventLoopGroup-5-2/INFO]: [Geyser-Spigot] Player connected with username YoGurt0811
+[11:51:33] [localSession-8-2/INFO]: [Geyser-Spigot] YoGurt0811 (logged in as: YoGurt0811) has connected to the Java server
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_PRIMARYKEY] A PRIMARY KEY constraint failed (UNIQUE constraint failed: zelbounty_players.uuid)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at org.sqlite.core.DB.execute(DB.java:985)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at org.sqlite.core.DB.executeUpdate(DB.java:1054)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at org.sqlite.jdbc3.JDBC3PreparedStatement.lambda$executeLargeUpdate$2(JDBC3PreparedStatement.java:129)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeLargeUpdate(JDBC3PreparedStatement.java:124)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:105)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at ZelBounty-2.0.2-all.jar//bg.pikz.zelbounty.database.impl.SqliteDb.loadPlayer(SqliteDb.java:261)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at ZelBounty-2.0.2-all.jar//bg.pikz.zelbounty.listeners.AsyncPlayerPreLoginListener.onAsyncPlayerPreLogin(AsyncPlayerPreLoginListener.java:43)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor511.execute(Unknown Source)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at net.minecraft.server.network.ServerLoginPacketListenerImpl.callPlayerPreLoginEvents(ServerLoginPacketListenerImpl.java:367)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at floodgate-spigot.jar//org.geysermc.floodgate.addon.data.SpigotDataHandler.checkAndHandleLogin(SpigotDataHandler.java:212)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at floodgate-spigot.jar//org.geysermc.floodgate.addon.data.SpigotDataHandler.channelRead(SpigotDataHandler.java:145)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at floodgate-spigot.jar//org.geysermc.floodgate.addon.data.CommonDataHandler.channelRead(CommonDataHandler.java:178)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at ProtocolLib.jar//com.comphenix.protocol.injector.netty.channel.NettyChannelInjector.processInbound(NettyChannelInjector.java:441)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at ProtocolLib.jar//com.comphenix.protocol.injector.netty.channel.InboundPacketInterceptor.channelRead(InboundPacketInterceptor.java:47)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at ProtocolLib.jar//com.comphenix.protocol.injector.netty.channel.InboundProtocolReader.channelRead(InboundProtocolReader.java:25)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.handler.flow.FlowControlHandler.dequeue(FlowControlHandler.java:202)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.handler.flow.FlowControlHandler.channelRead(FlowControlHandler.java:164)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.handler.flush.FlushConsolidationHandler.channelRead(FlushConsolidationHandler.java:152)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.local.LocalChannel.readInbound(LocalChannel.java:299)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.local.LocalChannel.doBeginRead(LocalChannel.java:322)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannel$AbstractUnsafe.beginRead(AbstractChannel.java:834)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.DefaultChannelPipeline$HeadContext.read(DefaultChannelPipeline.java:1362)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeRead(AbstractChannelHandlerContext.java:835)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.read(AbstractChannelHandlerContext.java:814)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.handler.flow.FlowControlHandler.read(FlowControlHandler.java:144)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeRead(AbstractChannelHandlerContext.java:837)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.read(AbstractChannelHandlerContext.java:814)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.DefaultChannelPipeline.read(DefaultChannelPipeline.java:1004)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannel.read(AbstractChannel.java:290)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.DefaultChannelConfig.setAutoRead(DefaultChannelConfig.java:341)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at net.minecraft.network.UnconfiguredPipelineHandler.lambda$setupInboundHandler$0(UnconfiguredPipelineHandler.java:23)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at net.minecraft.network.UnconfiguredPipelineHandler$Inbound.write(UnconfiguredPipelineHandler.java:48)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:879)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:120)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:881)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.handler.codec.MessageToMessageEncoder.write(MessageToMessageEncoder.java:102)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:881)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:120)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:881)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:120)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:881)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.ChannelOutboundHandlerAdapter.write(ChannelOutboundHandlerAdapter.java:113)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at Geyser-Spigot (1).jar//org.geysermc.geyser.platform.spigot.GeyserSpigotCompressionDisabler.write(GeyserSpigotCompressionDisabler.java:90)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:881)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:863)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:968)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:856)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.ChannelOutboundHandlerAdapter.write(ChannelOutboundHandlerAdapter.java:113)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at net.minecraft.network.Connection$2.write(Connection.java:762)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:881)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:940)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:966)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.writeAndFlush(AbstractChannelHandlerContext.java:934)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.DefaultChannelPipeline.writeAndFlush(DefaultChannelPipeline.java:1020)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannel.writeAndFlush(AbstractChannel.java:311)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at Geyser-Spigot (1).jar//org.geysermc.geyser.network.netty.ChannelWrapper.writeAndFlush(ChannelWrapper.java:219)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at ProtocolLib.jar//com.comphenix.protocol.injector.netty.channel.NettyChannelProxy.writeAndFlush(NettyChannelProxy.java:227)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at ProtocolLib.jar//com.comphenix.protocol.injector.netty.channel.NettyChannelProxy.writeAndFlush(NettyChannelProxy.java:233)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at net.minecraft.network.Connection.setupInboundProtocol(Connection.java:376)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at net.minecraft.server.network.ServerHandshakePacketListenerImpl.beginLogin(ServerHandshakePacketListenerImpl.java:132)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at net.minecraft.server.network.ServerHandshakePacketListenerImpl.handleIntention(ServerHandshakePacketListenerImpl.java:47)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at net.minecraft.network.protocol.handshake.ClientIntentionPacket.handle(ClientIntentionPacket.java:32)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at net.minecraft.network.protocol.handshake.ClientIntentionPacket.handle(ClientIntentionPacket.java:9)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at net.minecraft.network.Connection.genericsFtw(Connection.java:325)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at net.minecraft.network.Connection.channelRead0(Connection.java:306)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at net.minecraft.network.Connection.channelRead0(Connection.java:70)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:61)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:425)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.channel.DefaultEventLoop.run(DefaultEventLoop.java:54)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+[11:51:34] [Geyser Spigot connection thread-7-3/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[11:51:35] [Server thread/INFO]: [floodgate] Floodgate player logged in as YoGurt0811 joined (UUID: 00000000-0000-0000-0009-01f6b926a800)
+[11:51:36] [Server thread/INFO]: YoGurt0811 joined the game
+[11:51:36] [Server thread/INFO]: YoGurt0811[/14.181.232.132:0] logged in with entity id 182 at ([spawn]-71.70511, 92.0, 11.127062)
+[11:51:37] [Server thread/ERROR]: Could not pass event SynchronizedDataLoadEvent to MMOItems v6.10.1-SNAPSHOT
+java.lang.IllegalArgumentException: StatMap is still in buffer mode
+	at MythicLib-1.7.1-188.jar/io.lumine.mythic.lib.util.lang3.Validate.isTrue(Validate.java:638) ~[MythicLib-1.7.1-188.jar:?]
+	at MythicLib-1.7.1-188.jar/io.lumine.mythic.lib.api.stat.StatInstance.releaseUpdates(StatInstance.java:197) ~[MythicLib-1.7.1-188.jar:?]
+	at MythicLib-1.7.1-188.jar/io.lumine.mythic.lib.api.stat.StatInstance$ModifierPacket.update(StatInstance.java:245) ~[MythicLib-1.7.1-188.jar:?]
+	at MMOItems-6.10.1-157-7 (1).jar/net.Indyuce.mmoitems.api.player.PlayerStats.updateStats(PlayerStats.java:91) ~[MMOItems-6.10.1-157-7 (1).jar:?]
+	at MMOItems-6.10.1-157-7 (1).jar/net.Indyuce.mmoitems.api.player.PlayerData.updateInventory(PlayerData.java:260) ~[MMOItems-6.10.1-157-7 (1).jar:?]
+	at MMOItems-6.10.1-157-7 (1).jar/net.Indyuce.mmoitems.listener.PlayerListener.fullSync(PlayerListener.java:64) ~[MMOItems-6.10.1-157-7 (1).jar:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor463.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:1.21-130-b1b5d4c]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21-R0.1-SNAPSHOT.jar:?]
+	at MythicLib-1.7.1-188.jar/io.lumine.mythic.lib.data.SynchronizedDataManager.lambda$setup$7(SynchronizedDataManager.java:262) ~[MythicLib-1.7.1-188.jar:?]
+	at MythicLib-1.7.1-188.jar/io.lumine.mythic.lib.util.Tasks.lambda$sync$5(Tasks.java:160) ~[MythicLib-1.7.1-188.jar:?]
+	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:86) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:475) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1726) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at net.minecraft.server.dedicated.DedicatedServer.tickChildren(DedicatedServer.java:473) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1598) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1304) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:330) ~[paper-1.21.jar:1.21-130-b1b5d4c]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[11:51:38] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3001ms or 60 ticks behind
+[11:51:54] [epollEventLoopGroup-4-1/ERROR]: [org.cloudburstmc.netty.handler.codec.raknet.common.RakSessionCodec] [/14.181.232.132:55658] Error while ticking RakSessionCodec state=CONNECTED channelActive=true
+java.lang.NullPointerException: Cannot invoke "org.cloudburstmc.netty.channel.raknet.packet.RakDatagramPacket.getNextSend()" because "datagram" is null
+	at Geyser-Spigot (1).jar/org.cloudburstmc.netty.handler.codec.raknet.common.RakSessionCodec.sendStaleDatagrams(RakSessionCodec.java:559) ~[Geyser-Spigot (1).jar:?]
+	at Geyser-Spigot (1).jar/org.cloudburstmc.netty.handler.codec.raknet.common.RakSessionCodec.internalFlush(RakSessionCodec.java:494) ~[Geyser-Spigot (1).jar:?]
+	at Geyser-Spigot (1).jar/org.cloudburstmc.netty.handler.codec.raknet.common.RakSessionCodec.onTick(RakSessionCodec.java:457) ~[Geyser-Spigot (1).jar:?]
+	at Geyser-Spigot (1).jar/org.cloudburstmc.netty.handler.codec.raknet.common.RakSessionCodec.tryTick(RakSessionCodec.java:405) ~[Geyser-Spigot (1).jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:159) ~[netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174) ~[netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167) ~[netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:416) ~[netty-transport-classes-epoll-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.97.Final.jar:4.1.97.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[11:51:54] [epollEventLoopGroup-5-2/INFO]: [Geyser-Spigot] YoGurt0811 has disconnected from the Java server because of disconnect.lost
+[11:51:54] [Server thread/INFO]: YoGurt0811 lost connection: Disconnected
+[11:51:54] [Geyser Spigot connection thread-7-3/INFO]: [floodgate] Floodgate player logged in as YoGurt0811 disconnected
+[11:51:55] [Server thread/INFO]: YoGurt0811 left the game
+[11:52:41] [Server thread/INFO]: Stopping the server
+[11:52:42] [Server thread/INFO]: Stopping server
+[11:52:42] [Server thread/INFO]: [AdvancedBan] Disabling AdvancedBan v2.3.0
+[11:52:42] [Server thread/INFO]: [hsqldb.db.HSQLDB9074551F4D.ENGINE] Database closed
+[11:52:42] [Server thread/INFO]: [me.leoko.advancedban.shaded.com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[11:52:42] [Server thread/INFO]: [me.leoko.advancedban.shaded.com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[11:52:42] [Server thread/INFO]: 
+ 
+[]=====[Disabling AdvancedBan]=====[]
+| Information:
+|   Name: AdvancedBan
+|   Developer: Leoko
+|   Version: 2.3.0
+|   Storage: HSQLDB (local)
+| Support:
+|   Github: https://github.com/DevLeoko/AdvancedBan/issues
+|   Discord: https://discord.gg/ycDG6rS
+| Twitter: @LeokoGar
+[]================================[]
+ 
+[11:52:42] [Server thread/INFO]: [AdvancedSeasons] Disabling AdvancedSeasons v1.7.15
+[11:52:42] [Server thread/INFO]: [AuthMePE] Disabling AuthMePE v1.1.3
+[11:52:42] [Server thread/INFO]: ---------------------
+[11:52:42] [Server thread/INFO]: Author: ShinTHL09
+[11:52:42] [Server thread/INFO]: Plugin: Has Disable
+[11:52:42] [Server thread/INFO]: Name: AuthMePE
+[11:52:42] [Server thread/INFO]: Version: 1.1.3
+[11:52:42] [Server thread/INFO]: Add support folia by Tuanvo0022
+[11:52:42] [Server thread/INFO]: ---------------------
+[11:52:42] [Server thread/INFO]: [BetterTeams] Disabling BetterTeams v4.12.0
+[11:52:42] [Server thread/INFO]: [BreweryX] Disabling BreweryX v3.4.10;HEAD
+[11:52:42] [Server thread/INFO]: [BreweryX] Closed connection from: SQLite
+[11:52:42] [Server thread/INFO]: [BreweryX] BreweryX disabled!
+[11:52:42] [Server thread/INFO]: [EconomyShopGUI] Disabling EconomyShopGUI v6.12.1
+[11:52:42] [Server thread/INFO]: [FancyHolograms] Disabling FancyHolograms v2.3.3
+[11:52:42] [Server thread/INFO]: [GSit] Disabling GSit v2.3.2
+[11:52:42] [Server thread/INFO]: [WorldGuard] Unregistering session handler dev.geco.gsit.link.worldguard.RegionFlagHandler
+[11:52:42] [Server thread/INFO]: [GSit] The plugin was successfully disabled.
+[11:52:42] [Server thread/INFO]: [InteractiveChat] Disabling InteractiveChat v4.2.16.0
+[11:52:42] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion interactivechat
+[11:52:42] [Server thread/INFO]: [PlaceholderAPI] Reason: required plugin InteractiveChat was disabled.
+[11:52:42] [Server thread/INFO]: [InteractiveChat] InteractiveChat has been Disabled!
+[11:52:42] [Server thread/INFO]: [LPC] Disabling LPC v3.6.0
+[11:52:42] [Server thread/INFO]: [MOTD] Disabling MOTD v2.3.11
+[11:52:42] [Server thread/INFO]: [Skript] Disabling Skript v2.11.0
+[11:52:42] [Server thread/INFO]: [TAB] Disabling TAB v5.2.0
+[11:52:42] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.3.2
+[11:52:42] [Server thread/INFO]: [ZelBounty] Disabling ZelBounty v2.0.2
+[11:52:42] [Server thread/INFO]: [ZelBounty] Disabling plugin...
+[11:52:42] [Server thread/INFO]: [ZelBounty] Plugin disabled in 0.001s!
+[11:52:42] [Server thread/INFO]: [ajLeaderboards] Disabling ajLeaderboards v2.9.0
+[11:52:42] [pool-96-thread-1/INFO]: [ajLeaderboards] Shutting down cache method..
+[11:52:42] [pool-96-thread-1/INFO]: [ajLeaderboards] Cache method shut down
+[11:52:42] [Server thread/INFO]: [ajLeaderboards] Killing remaining workers
+[11:52:42] [Server thread/INFO]: [ajLeaderboards] Remaining workers killed
+[11:52:42] [Server thread/INFO]: [ajLeaderboards] ajLeaderboards v2.9.0 disabled.
+[11:52:42] [Server thread/INFO]: [MiniMOTD] Disabling MiniMOTD v2.1.3
+[11:52:42] [Server thread/INFO]: [MMOItems] Disabling MMOItems v6.10.1-SNAPSHOT
+[11:52:42] [Server thread/INFO]: [MMOItems] Waiting for other threads, please wait...
+[11:52:42] [Server thread/INFO]: [AuthMe] Disabling AuthMe v5.6.0-bCUSTOM
+[11:52:42] [Server thread/INFO]: [AuthMe] Waiting for 0 tasks to finish
+[11:52:42] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0-bCUSTOM disabled!
+[11:52:42] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.7.1-SNAPSHOT
+[11:52:42] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[11:52:42] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[11:52:42] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.21.1-dev+13-be3e641
+[11:52:42] [Server thread/INFO]: [MMOCore] Disabling MMOCore v1.12.1-SNAPSHOT
+[11:52:42] [Server thread/INFO]: [MMOCore] Waiting for other threads, please wait...
+[11:52:42] [Server thread/INFO]: [AuraSkills] Disabling AuraSkills v2.2.8
+[11:52:42] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.4-SNAPSHOT (b116-0e3163c)
+[11:52:42] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.1-dev+13-be3e641
+[11:52:42] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
+[11:52:42] [Server thread/INFO]: [MythicLib] Disabling MythicLib v1.7.1-SNAPSHOT
+[11:52:42] [Server thread/INFO]: [DecentHolograms] Disabling DecentHolograms v2.8.16
+[11:52:42] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.3.0
+[11:52:42] [Server thread/INFO]: [MythicMobs] Disabling MythicMobs v5.8.2-SNAPSHOT-5b666f3a
+[11:52:42] [Server thread/INFO]: [MythicMobs] ------------------------------------------------------------
+[11:52:42] [Server thread/INFO]: [MythicMobs] - 
+[11:52:42] [Server thread/INFO]: [MythicMobs] - Unloading Mythic...
+[11:52:42] [Server thread/INFO]: [MythicMobs] - 
+[11:52:42] [Server thread/INFO]: [MythicMobs] ------------------------------------------------------------
+[11:52:42] [Server thread/INFO]: [MythicMobs] - Spawners saved and unloaded...
+[11:52:42] [Server thread/INFO]: [MythicMobs] - Mobs saved and unloaded...
+[11:52:42] [Server thread/INFO]: [MythicMobs] Saving plugin data...
+[11:52:42] [Server thread/INFO]: [MythicMobs] ✓Saving Finished
+[11:52:42] [Server thread/INFO]: [MythicMobs] - Variables saved...
+[11:52:42] [Server thread/INFO]: [MythicMobs] - All active settings have been saved!
+[11:52:42] [Server thread/INFO]: [MythicMobs] - Mythic has been unloaded!
+[11:52:42] [Server thread/INFO]: [MythicMobs] ------------------------------------------------------------
+[11:52:42] [Server thread/INFO]: [MythicMobs] Saving plugin data...
+[11:52:42] [Server thread/INFO]: [MythicMobs] ✓Saving Finished
+[11:52:42] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.6
+[11:52:42] [Server thread/INFO]: [Multiverse-Core] Disabling Multiverse-Core v4.3.1-b861
+[11:52:42] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v7.0.11+068ad68
+[11:52:42] [Server thread/INFO]: [WorldGuard] Shutting down executor and cancelling any pending tasks...
+[11:52:42] [Server thread/INFO]: [VoidGen] Disabling VoidGen v2.2.1
+[11:52:42] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.12.3-SNAPSHOT-986;a2a5545
+[11:52:42] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[11:52:42] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
+[11:52:42] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.158
+[11:52:42] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[11:52:42] [Server thread/INFO]: [LuckPerms] Closing storage...
+[11:52:42] [Server thread/INFO]: [LuckPerms] Goodbye!
+[11:52:42] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.3.2
+[11:52:42] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[11:52:42] [Server thread/INFO]: Saving players
+[11:52:42] [Server thread/INFO]: Saving worlds
+[11:52:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[spawn]'/minecraft:overworld
+[11:52:42] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'spawn'
+[11:52:42] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'spawn'
+[11:52:42] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'spawn'
+[11:52:42] [WebSocketConnectReadThread-188/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[11:52:44] [Server thread/INFO]: [ChunkHolderManager] Saved 611 block chunks, 602 entity chunks, 0 poi chunks in world 'spawn' in 1.53s
+[11:52:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[spawn_nether]'/minecraft:the_nether
+[11:52:44] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'spawn_nether'
+[11:52:44] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'spawn_nether'
+[11:52:44] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'spawn_nether'
+[11:52:44] [Server thread/INFO]: [ChunkHolderManager] Saved 642 block chunks, 3 entity chunks, 0 poi chunks in world 'spawn_nether' in 0.27s
+[11:52:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[spawn_the_end]'/minecraft:the_end
+[11:52:44] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'spawn_the_end'
+[11:52:44] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'spawn_the_end'
+[11:52:44] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'spawn_the_end'
+[11:52:44] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'spawn_the_end' in 0.01s
+[11:52:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[AFK]'/minecraft:afk
+[11:52:44] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'AFK'
+[11:52:44] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'AFK'
+[11:52:44] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'AFK'
+[11:52:44] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'AFK' in 0.00s
+[11:52:44] [Server thread/INFO]: ThreadedAnvilChunkStorage (spawn): All chunks are saved
+[11:52:44] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[11:52:44] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[11:52:44] [Server thread/INFO]: ThreadedAnvilChunkStorage (AFK): All chunks are saved
+[11:52:44] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
